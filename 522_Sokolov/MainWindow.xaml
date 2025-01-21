@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_522_Sokolov"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Практическая работа 1" Height="319" Width="292" WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <Image HorizontalAlignment="Center" Height="87" Margin="0,23,0,0" VerticalAlignment="Top" Width="260" Source="/pic.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="43,128,0,0" TextWrapping="Wrap" Text="x" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="42,159,0,0" TextWrapping="Wrap" Text="b" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="15,261,0,0" TextWrapping="Wrap" Text="Ответ:" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox1" PreviewTextInput="TextBox_PreviewTextInput" HorizontalAlignment="Left" Margin="61,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76" Height="16" TextChanged="textBox1_TextChanged"/>
+        <TextBox x:Name="textBox2" PreviewTextInput="TextBox_PreviewTextInput" HorizontalAlignment="Left" Margin="61,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76" Height="16" TextChanged="textBox2_TextChanged"/>
+        <TextBox x:Name="textBox3" IsReadOnly="True" HorizontalAlignment="Left" Margin="61,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76" Height="16" TextChanged="TextBox_TextChanged"/>
+        <RadioButton x:Name="radioButton1" Content="sh(x)" HorizontalAlignment="Left" Margin="61,194,0,0" VerticalAlignment="Top" Checked="radioButton1_Checked"/>
+        <RadioButton x:Name="radioButton2" Content="x^2" HorizontalAlignment="Left" Margin="61,212,0,0" VerticalAlignment="Top" Checked="radioButton2_Checked"/>
+        <RadioButton x:Name="radioButton3" Content="e^x" HorizontalAlignment="Left" Margin="61,231,0,0" VerticalAlignment="Top" Checked="radioButton3_Checked"/>
+        <Button x:Name="button1" Content="Вычислить" HorizontalAlignment="Left" Margin="146,182,0,0" VerticalAlignment="Top" Height="29" Click="button1_Click"/>
+        <Button x:Name="button2" Content="Очистить" HorizontalAlignment="Left" Margin="146,231,0,0" VerticalAlignment="Top" Width="63" Height="29" Click="Button_Click"/>
     </Grid>
 </Window>
