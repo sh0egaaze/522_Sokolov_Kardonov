@@ -129,6 +129,10 @@ namespace _522_Sokolov
             {
                 e.Handled = true; 
             }
+            if (e.Text.Contains(" "))
+            {
+                e.Handled = true;
+            }
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
