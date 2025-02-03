@@ -25,6 +25,16 @@ namespace _522_Sokolov
         public MainWindow()
         {
             InitializeComponent();
+            this.Closing += MainWindow_Closing;
+        }
+
+        private void MainWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            MessageBoxResult result = MessageBox.Show("Вы действительно хотите выйти?", "Подтверждение выхода", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (result == MessageBoxResult.No)
+            {
+                e.Cancel = true;
+            }
         }
 
         public double Sh(double x)
@@ -128,10 +138,6 @@ namespace _522_Sokolov
             if (e.Text == "," && (sender as TextBox).Text.Contains(","))
             {
                 e.Handled = true; 
-            }
-            if (e.Text.Contains(" "))
-            {
-                e.Handled = true;
             }
         }
 
